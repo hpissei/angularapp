@@ -1,5 +1,8 @@
 'use strict'
+(function(){
 var app=angular.module('myapp',[]);
-app.controller('myctrl',function(){
-	alert("hello");
+app.controller('myctrl',function($scope){
+	$scope.name="hello";
+	alert("fwe");
+});
 });
