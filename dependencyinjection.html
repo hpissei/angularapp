@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Dependency Injection</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app3.js"></script>
+	</head>
+	<body ng-app="DiApp">
+		<div ng-controller="DiController">
+		<br>
+			<input type="text" ng-model="name" ng-blur="upper()"><br>{{name}}
+		</div>
+	</body>
+</html>

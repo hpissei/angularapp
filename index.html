@@ -1,14 +1,23 @@
 <html>
 <head>
 <title>My first angular app</title>
-<script src="app.js"></script>
-<script src="angular.min.js"></script>
 </head>
 <body>
-	<div ng-app="myapp">
+<!--
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+-->
+<script src="angular.min.js"></script>
+
+<script src="app/app.js"></script>
+	<div ng-app="myapp" id="app">
 		<div ng-controller="myctrl">
-			{{3+4}}	
+			{{sayHello()}}	
+		<input type="text" name="" ng-model="name" >
+			{{name}}
 		</div>
-		
+		<div>
+			<input type="text" name="" ng-model="name">
+			{{3+3}}
+		</div>
 	</div>
 </body>

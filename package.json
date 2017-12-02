@@ -1,0 +1,25 @@
+{
+  "name": "angularapp",
+  "version": "1.0.0",
+  "description": "My first angular app",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hpissei/angularapp.git"
+  },
+  "keywords": [
+    "angularapp"
+  ],
+  "author": "hpissei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hpissei/angularapp/issues"
+  },
+  "homepage": "https://github.com/hpissei/angularapp#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-mincss": "^0.3.2",
+    "grunt-contrib-uglify": "^3.2.1"
+  }
+}
