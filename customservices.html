@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Custom Services</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css"  crossorigin="anonymous">
+	<script type="text/javascript" src="angular.min.js"></script>
+	
+	<script type="text/javascript" src="app\app8.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap\js\bootstrap.min.js" ></script>
+
+</head>
+<body ng-app="myapp">
+<div class="container" ng-controller="ctrl1 as item">
+	<div class="form-group">
+		<label for="Itemname">Itemname</label><input type="text" ng-model="item.itemname" class="form-control">
+		<label for="Itemqty">Item Quantity</label><input type="text" ng-model="item.itemqty" class="form-control"><br/>
+		<button class="btn btn-primary" ng-click="item.additem()">Add Item</button>
+	</div>
+</div>
+<div class="container" ng-controller="ctrl2 as showlist">
+	<ol>
+		<li ng-repeat="i in showlist.items">{{i}}</li>
+	</ol>
+</div>
+</body>
+</html>

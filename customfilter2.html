@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Customer Filter 2</title>
+	<script src="angular.min.js"></script>
+	<script src="app/app6.js"></script>
+</head>
+<body ng-app="myapp" ng-controller="ctrl">
+ 	<div>
+ 		Original Message :{{name}}{{sayMessage()}}<br/>
+ 		Updated  Message :{{name | loves : "loves"}}
+ 	</div>
+</body>
+</html>

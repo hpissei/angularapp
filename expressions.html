@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Expressions</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app/app4.js"></script>
+	</head>
+	<body ng-app="expapp" ng-controller="expctrl">
+		<h1>Expression</h1>
+		<button value="Change Image" ng-click="ChangeImage()">Change Image</button>Image var{{image}}
+		<img ng-src="empacc{{image}}">
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ng-repeat</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app\app7.js"></script>
+	<noscript>Please Enable Javascript</noscript>
+</head>
+<body ng-app="myapp" ng-controller="ctrl">
+{{name}}
+<ul>
+	<li ng-repeat="item in list1">{{$index+1}} {{item}}</li>
+</ul>
+<ul>
+	<li ng-repeat="item in list2">{{$index+1}} {{item.name}} salary is :{{item.salary}}</li>
+</ul>
+<br/>
+<input type="text" ng-model="search" placeholder="Enter search string"><br/>
+<ul>
+	<li ng-repeat="item in list1|filter:search">{{$index+1}} {{item}}</li>
+</ul><br/>
+<label>Enter the name of item</label>
+<input type="text" name="" ng-model="itemname">
+<br/><label>Enter salary</label>
+<input type="text" ng-model="itemsalary">
+<br/>
+<button ng-click="add()">Add</button>
+</body>
+</html>
