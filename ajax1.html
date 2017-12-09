@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ajax Example</title>
+		<script type="text/javascript" src="angular.min.js"></script>
+		<script type="text/javascript" src="app\app11.js"></script>
+		<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+		<script src="bootstrap\js\bootstrap.min.js" ></script>
+	</head>
+	<body ng-app="myshopapp">
+		<h1>Using $http service</h1>
+		<div class="container" ng-controller="MenuCategoriesController as menu">
+			<h3>List of Menu Items</h3>
+			<div class="form-group">
+			<ul class="form-control">
+				<li ng-repeat="category in menu.categories">{{$index+1}} {{category.short_name}}  {{category.name}} {{category.food}}</li>
+			</ul>
+			</div>
+		</div>
+	</body>
+</html>

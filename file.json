@@ -1,0 +1,23 @@
+
+ [
+	{
+		"short_name":"L",
+		"name":"Lunch",
+		"food":"Biryani"
+	},
+	{
+		"short_name":"m",
+		"name":"middle",
+		"food":"Biryani"
+	},
+	{
+		"short_name":"b",
+		"name":"breakfast",
+		"food":"Biryani"
+	},
+	{
+		"short_name":"d",
+		"name":"dinner",
+		"food":"Biryani"
+	}
+  ]

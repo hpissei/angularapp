@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asynchronous Functions Using service,promise,defer,resolve,reject,then</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app\app10.js"></script>
+	<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+	<script src="bootstrap\js\bootstrap.min.js" ></script>
+</head>
+	<body ng-app="ShoppingListPromiseApp">
+		<div class="container" ng-controller="ShoppingListController as list">
+		<div class="form-group">
+			<h1>Shopping List</h1>
+			<input type="text" ng-model="list.itemName" placeholder="Item name" class="form-control">
+			<input type="text" ng-model="list.itemQuantity" placeholder="Item quantity" class="form-control">
+			<button ng-click="list.addItem();" class="btn btn-primary">Add Item</button>
+			<ol>
+				<li ng-repeat="item in list.items">{{item.quantity}} boxes of {{item.name}}
+				<!-- button class="btn btn-primary" ng-click="list.removeItem();">Remove</button -->
+				</li>
+			</ol>
+		</div><!-- formgroup -->
+		</div><!-- container -->
+	</body>
+</html>
